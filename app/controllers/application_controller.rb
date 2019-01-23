@@ -30,7 +30,8 @@ class ApplicationController < Sinatra::Base
   end 
   
   get '/articles'
-    
+    @articles = Article.all
+    erb :index
   end
   
 end
