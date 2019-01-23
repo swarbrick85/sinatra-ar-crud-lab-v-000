@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
   
     @article1 = Article.create(params)
     
-    erb :show
+    erb :index
   end 
   
 end
