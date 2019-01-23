@@ -29,4 +29,8 @@ class ApplicationController < Sinatra::Base
     erb :show 
   end 
   
+  get '/articles'
+    
+  end
+  
 end
