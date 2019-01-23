@@ -16,8 +16,9 @@ class ApplicationController < Sinatra::Base
   end 
   
   post '/articles' do 
-    @article1 = Article.new(params)
     binding.pry
+    @article1 = Article.new(params)
+    
     erb :index
   end 
   
