@@ -21,6 +21,8 @@ class ApplicationController < Sinatra::Base
     @article1 = Article.create(params)
     
      redirect to "/articles/#{@article1.id}"
+     
+     erb: show
   end 
   
 end
