@@ -43,6 +43,7 @@ class ApplicationController < Sinatra::Base
     @article3 = Article.find_by(id: params[:id])
     @article3.title = params[:title]
     @article3.content = params[:content]
+    @article3.save
     erb :show
   end 
   
