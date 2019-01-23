@@ -12,13 +12,14 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/articles/new' do
+    binding.pry
     erb :new 
   end 
   
   post '/articles' do 
   
     @article1 = Article.create(params)
-    binding.pry
+    
     erb :index
   end 
   
