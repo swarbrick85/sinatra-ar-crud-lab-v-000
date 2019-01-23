@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
   
     @article1 = Article.create(params)
     
-    erb :index
+     redirect to "/articles/#{@article.id}"
   end 
   
 end
