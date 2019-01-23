@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     
      redirect to "/articles/#{@article1.id}"
      
-     erb: show
+     erb :show
   end 
   
 end
