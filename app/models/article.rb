@@ -8,6 +8,7 @@ class Article < ActiveRecord::Base
     @title = params[:title]
     @content = params[:content]
     @@all << self 
+    
   end 
   
   
