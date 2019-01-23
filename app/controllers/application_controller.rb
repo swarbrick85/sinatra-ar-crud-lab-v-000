@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
   patch '/articles/:id' do 
     @article2.title = params[:title]
     @article2.content = params[:content]
-    erb :edit
+    erb :show
   end 
   
   
